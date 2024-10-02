@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Management System</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body onload="showAllStudentData()">
+
+    <div class="container">
+        <h1>Student Grade Management System</h1>
+
+        <!-- Add Student Section -->
+        <div class="form-section">
+            <h2>Add a New Student</h2>
+            <input type="text" id="student-name" placeholder="Enter student name">
+            <button id="add-student-btn">Add Student</button>
+        </div>
+
+        <!-- Search Student Section -->
+        <div class="form-section">
+            <h2>Search a Student</h2>
+            <input type="text" id="student-id" placeholder="Enter student id">
+            <button id="search-student-btn">Search Student</button>
+            <div id="response"></div>
+        </div>
+
+        <!-- Record Grade Section -->
+        <div class="form-section">
+            <h2>Record Student Grades</h2>
+            <input type="text" id="grade-student-id" placeholder="Enter student id">
+            <input type="text" id="student-subject" placeholder="Enter subject">
+            <input type="number" id="student-grade" placeholder="Enter grade">
+            <button id="record-grade-btn">Record Grade</button>
+        </div>
+
+        <!-- Display All Students Section -->
+        <div class="form-section">
+            <h2>All Students</h2>
+            <button id="list-students-btn" onclick="showAllStudentData()">Show All Students</button>
+            <div id="response2"></div>
+        </div>
+
+        <!-- Calculate Average Section -->
+        <div class="form-section">
+            <h2>Calculate Average for a Student</h2>
+            <input type="text" id="average-student-id" placeholder="Enter student id">
+            <button id="calculate-average-btn">Calculate Average</button>
+            <p id="average-result"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
